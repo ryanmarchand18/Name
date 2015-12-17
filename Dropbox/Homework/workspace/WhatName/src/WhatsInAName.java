@@ -1,73 +1,78 @@
 import java.util.*;
 public class WhatsInAName {
 	public static void main(String[] args) {
-		Scanner scan = new Scanner();
+		Scanner scan = new Scanner(System.in);
 		char[] input = scan.nextLine().toCharArray();
-
+		vowel(input);
 	}
 	//marco
-	static char[] reverse 
+	static char[] reverse() 
 	{
-		return
+		return null;
 	}
 	//damon
-	static int vowel
-	{
-		//REAL ACTUAL CHANGES HOORAY
+	static int vowel(char[] charray){
+		int vowelnum = 0;
+		for(int i = 0; i < charray.length; i++){
+			if(charray[i] == 'a' || charray[i] == 'e' || charray[i] == 'i' || charray[i] == 'o' || charray[i] == 'u'){
+				vowelnum++;
+			}
+		}
+		return vowelnum;
 	}
 	//Nicky
-	static int consonentFrequency
+	static int consonentFrequency()
 	{
-		
+		return 0;
 	}
 	//Ryan
-	static String firtsName
+	static String firstName()
 	{
-		
+		return null;
 	}
-	static string lastName
+	static String lastName()
 	{
-		
+		return null;
 	}
-	static string middleName
+	static String middleName()
 	{
-		
+		return null;
 	}
-	static boolean hyphen
+	static boolean hyphen()
 	{
-		
+		return false;
 	}
-	static char[] lowerCase
+	static char[] lowerCase()
 	{
-		
+		return null;
 	}
-	static char[] upperCase
+	static char[] upperCase()
 	{
-		
+		return null;
 	}
-	static char[] random
+	static char[] random()
 	{
-		
+		return null;
 	}
-	static boolean palindrome
+	static boolean palindrome()
 	{
-		
+		return false;
 	}
-	static char[] sorted
+	static char[] sorted()
 	{
-		
+		return null;
 	}
-	static char[] initials
+	static char[] initials()
 	{
-		
+		return null;
 	}
-	static boolean title
+	static boolean title()
 	{
-		
+		return false;
 	}
-	static char[] strongSyllable
+	static char[] strongSyllable()
 	{
-		
+		return null;
 	}
 
 }
