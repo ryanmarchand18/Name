@@ -13,7 +13,7 @@ public class WhatsInAName {
 	//damon
 	static int vowel
 	{
-		//REAL ACTUAL CHANGES
+		//REAL ACTUAL CHANGES HOORAY
 	}
 	//Nicky
 	static int consonentFrequency
