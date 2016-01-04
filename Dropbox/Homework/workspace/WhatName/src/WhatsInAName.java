@@ -48,9 +48,21 @@ public class WhatsInAName {
 	{
 		return null;
 	}
-	static String middleName()
+	static char[] middleName(char[] charrayM)
 	{
-		return null;
+		int i = 0;
+		while(charrayM[i] != ' ')
+		{
+			i++;
+		}
+			
+		
+		char[] Middlename = new char[i];
+		for (int j = 0; j < i; j++) {
+			Middlename[j] = charrayM[j];
+		}
+	
+		return Middlename;
 	}
 	static boolean hyphen()
 	{
