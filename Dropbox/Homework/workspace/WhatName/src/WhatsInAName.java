@@ -4,6 +4,8 @@ public class WhatsInAName {
 		Scanner scan = new Scanner(System.in);
 		char[] input = scan.nextLine().toCharArray();
 		vowel(input);
+		firstName(input);
+		System.out.println(firstName(input));
 	}
 	//marco
 	static char[] reverse() 
@@ -26,9 +28,21 @@ public class WhatsInAName {
 		return 0;
 	}
 	//Ryan
-	static String firstName()
+	static char[] firstName(char[] charray)
 	{
-		return null;
+		int i = 0;
+		while(charray[i] != ' ')
+		{
+			i++;
+		}
+			
+		
+		char[] Firstname = new char[i];
+		for (int j = 0; j < i; j++) {
+			Firstname[j] = charray[j];
+		}
+	
+		return Firstname;
 	}
 	static String lastName()
 	{
