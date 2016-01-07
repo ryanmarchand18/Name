@@ -3,8 +3,8 @@ public class WhatsInAName {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		char[] input = scan.nextLine().toCharArray();
-		consonentFrequency(input);
-		System.out.println(consonentFrequency(input));
+		hyphen(input);
+		System.out.println(hyphen(input));
 
 	}
 	//marco
@@ -57,9 +57,24 @@ public class WhatsInAName {
 	{
 		return null;
 	}
-	static boolean hyphen()
+	static boolean hyphen(char[] input)
 	{
-		return false;
+		boolean hyphen = false;
+		for (int i = 0; i < input.length; i++) 
+		{
+			if (input[i] == '-')
+			{
+				hyphen = true;
+			}
+		}
+		if (hyphen == false)
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
 	}
 	static char[] lowerCase()
 	{
