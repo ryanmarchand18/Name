@@ -1,11 +1,11 @@
-import java.util.Scanner;
+import java.util.*;
 public class WhatsInAName {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		char[] input = scan.nextLine().toCharArray();
-		hyphen(input);
-		System.out.println(hyphen(input));
-
+		vowel(input);
+		firstName(input);
+		System.out.println(firstName(input));
 	}
 	//marco
 	static char[] reverse() 
@@ -13,16 +13,25 @@ public class WhatsInAName {
 		return null;
 	}
 	//damon
-	static int vowel()
-	{
-		return 0;
-		//REAL ACTUAL CHANGES
+	static int vowel(char[] charray){
+		int vowelnum = 0;
+		for(int i = 0; i < charray.length; i++){
+			if(charray[i] == 'a' || charray[i] == 'e' || charray[i] == 'i' || charray[i] == 'o' || charray[i] == 'u'){
+				vowelnum++;
+			}
+		}
+		return vowelnum;
 	}
 	//Nicky
-	static int consonentFrequency(char[] input) 
+	static int consonentFrequency()
 	{
-		int consonents= 0;
-		for (int i = 0; i < input.length; i++) 
+		return 0;
+	}
+	//Ryan
+	static char[] firstName(char[] charray)
+	{
+		int i = 0;
+		while(charray[i] != ' ')
 		{
 			if(input[i]!='a' && input[i]!= 'A' && input[i]!= 'e' && input[i]!='E' && input[i]!='i' && input[i]!= 'I' 
 					&& input[i]!= 'o' && input[i]!= 'O' && input[i]!= 'u' && input[i]!= 'U')
@@ -42,19 +51,33 @@ public class WhatsInAName {
 				consonents++;
 			}
 		}
-		return consonents;
-	}
-	//Ryan
-	static String firstName()
-	{
-		return null;
+			
+		
+		char[] Firstname = new char[i];
+		for (int j = 0; j < i; j++) {
+			Firstname[j] = charray[j];
+		}
+	
+		return Firstname;
 	}
 	static String lastName()
 	{
 		return null;
 	}
-	static String middleName()
+	static char[] middleName(char[] charrayM)
 	{
+		int i = 0;
+		while(charrayM[i] != ' ')
+		{
+			i++;
+		}
+			
+		
+		char[] Middlename = new char[i];
+		for (int j = 0; j < i; j++) {
+			Middlename[j] = charrayM[j];
+		}
+	
 		return null;
 	}
 	static boolean hyphen(char[] input)
